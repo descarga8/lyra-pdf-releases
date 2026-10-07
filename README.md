@@ -6,7 +6,7 @@ Suite de escritorio para leer, organizar, reconocer, convertir, optimizar y firm
 
 Las versiones aprobadas se publican en [Releases](https://github.com/descarga8/lyra-pdf-releases/releases). Este repositorio distribuye instaladores, firmas de actualización y notas de cambios. La primera entrega está en preparación y no debe considerarse estable hasta completar sus pruebas de instalación y actualización.
 
-En Windows, descarga el instalador `Lyra PDF_VERSION_x64-setup.exe` de la versión estable más reciente. El paquete incluye el motor y OCR. No necesitas instalar Python. Si ya utilizas una carpeta portable anterior, guarda tus trabajos, sal de Lyra desde la bandeja e instala esta versión una vez.
+En Windows, descarga el instalador `Lyra-PDF_VERSION_x64-setup.exe` de la versión estable más reciente. El paquete incluye el motor y OCR. No necesitas instalar Python. Si ya utilizas una carpeta portable anterior, guarda tus trabajos, sal de Lyra desde la bandeja e instala esta versión una vez.
 
 ## Actualizaciones
 
