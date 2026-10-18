@@ -1,23 +1,27 @@
 # Lyra PDF
 
-Suite de escritorio para leer, organizar, reconocer, convertir, optimizar y firmar documentos. El procesamiento se realiza en tu equipo.
+Instaladores y actualizaciones firmadas de Lyra PDF para leer, organizar, reconocer, convertir, editar, rellenar, optimizar y firmar documentos.
 
 ## Descargar e instalar
 
-Las versiones aprobadas se publican en [Releases](https://github.com/descarga8/lyra-pdf-releases/releases). Este repositorio distribuye instaladores, firmas de actualización y notas de cambios. La primera entrega está en preparación y no debe considerarse estable hasta completar sus pruebas de instalación y actualización.
+Abre [Releases](https://github.com/descarga8/lyra-pdf-releases/releases) y descarga el instalador Windows x64 de la versión que quieras probar. Ejecuta el archivo `Lyra-PDF_VERSION_x64-setup.exe`; instala la aplicación para tu usuario. El motor Python, Tesseract y los idiomas español/inglés están incluidos. No necesitas instalar Python ni Tesseract. La aplicación requiere WebView2; el instalador comprueba este requisito.
 
-En Windows, descarga el instalador `Lyra-PDF_VERSION_x64-setup.exe` de la versión estable más reciente. El paquete incluye el motor y OCR. No necesitas instalar Python. Si ya utilizas una carpeta portable anterior, guarda tus trabajos, sal de Lyra desde la bandeja e instala esta versión una vez.
+Las versiones **beta / Pre-release** son para pruebas y descarga manual. La versión **Latest** es el canal estable. Si aún no hay una entrega estable publicada, usa una beta y revisa sus notas.
 
 ## Actualizaciones
 
-Desde la versión 0.2.0, abre **Configuración → Actualizaciones** para buscar y descargar nuevas versiones. Puedes activar la búsqueda diaria. Lyra verifica la firma de la descarga y permite reiniciar cuando hayas terminado los trabajos y cerrado los documentos. Antes de instalar crea un respaldo local; las versiones beta no se distribuyen por el canal estable.
+La aplicación pública busca actualizaciones firmadas desde **Configuración → Actualizaciones**. Solo recibe versiones estables superiores a la instalada. Las betas y los borradores no activan ese canal. Antes de instalar, termina los trabajos y guarda/cierra tus documentos; Lyra prepara un respaldo local y reinicia.
 
-Los archivos `SHA256SUMS.txt` permiten comprobar descargas manuales. Las firmas `.sig` se utilizan por el actualizador. Nunca se solicita una contraseña de GitHub desde Lyra.
+Los archivos `.sig`, `latest.json` y `SHA256SUMS.txt` acompañan al instalador. La firma del actualizador verifica el paquete; las sumas permiten comprobar las descargas manuales. La firma de editor Windows (Authenticode) todavía no está configurada.
 
-## Linux
+## Plataformas y edición madre
 
-El empaquetado AppImage y DEB está preparado para validación futura. El soporte Linux aún no se anuncia como disponible. La primera base de OCR requiere Tesseract y los idiomas español/inglés instalados en el sistema.
+La entrega pública actual está preparada para **Windows x64**. Linux se valida en una rama y en paquetes privados; no se anuncia todavía soporte completo ni actualización estable Linux. No hay paquete macOS.
 
-## Problemas
+La **edición madre** es privada y separada: gestiona versiones y construcciones desde el código del propietario. Este repositorio público no contiene el módulo de distribución, las credenciales ni el código fuente privado.
 
-Describe el problema en [Issues](https://github.com/descarga8/lyra-pdf-releases/issues). No adjuntes certificados, contraseñas ni documentos con información privada.
+## Privacidad y licencias
+
+Las herramientas PDF y OCR trabajan en el equipo. La IA es opcional; si configuras un proveedor externo, el texto se envía a ese proveedor al solicitar una respuesta. La IA local necesita un servidor/modelo local instalado por el usuario.
+
+El instalador incluye los avisos y licencias de Lyra y de los componentes distribuidos. El código propio mantiene Apache-2.0; los componentes externos conservan sus respectivas licencias.
